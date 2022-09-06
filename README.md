@@ -31,7 +31,8 @@ https://docs.ansible.com/
 
 3) Finally you need to know a few Vagrant commands to operate with the cluster using the terminal. The most important ones are:
 
-- <strong> vagrant up --provision</strong> ===> spin up the cluster (--provision is used to run Ansible scripts on the VM's). In alternative you can run the <strong>start.sh</strong> in the script folder.
+- <strong> vagrant up --provision</strong> 
+spin up the cluster (--provision is used to run Ansible scripts on the VM's). In alternative you can run the <strong>start.sh</strong> in the script folder.
 
 - <strong> vagrant status </strong> ===> check the status of the virtual machines. In alternative you can run the <strong>status.sh</strong> in the script folder.
 
