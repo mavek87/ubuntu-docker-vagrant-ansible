@@ -2,7 +2,7 @@
 
 ## Ubuntu Virtual Machines cluster with Docker
 
-Customizable cluster of Ubuntu virtual machines setup with docker installed. It's very easy to increase or reduce the number of VM's simply adding or removing them from the Vagrantifile.
+Easily setup a cluster of Ubuntu virtual machines with docker installed. It's very easy to increase or reduce the number of VM's simply adding or removing them from the Vagrantifile.
 
 ## Prerequisite steps
 
@@ -16,14 +16,11 @@ https://www.virtualbox.org/
 
 https://www.vagrantup.com/
 
-
 #### Ansible
 
 https://docs.ansible.com/
 
-
 ## And now? How does it work
-
 
 1) First you need to clone this repository
 
