@@ -2,11 +2,11 @@
 
 ## Ubuntu Virtual Machines cluster with Docker
 
-Easily setup a cluster of Ubuntu virtual machines with docker installed. It's very easy to increase or reduce the number of VM's simply adding or removing them from the Vagrantifile.
+Setup a cluster of Ubuntu virtual machines with docker installed, in the "Infrastructure as Code" way. Thanks to Vagrant and Ansible all the process will be completely automated. In addittion it's very easy to increase or reduce the number of VM's simply modifying the Vagrantifile.
 
 ## Prerequisite steps
 
-VirtualBox, Vagrant and Ansible need to be installed as prerequisites. You can find the installation steps provided in their respective official web sites.
+VirtualBox, Vagrant and Ansible need to be installed. You can find the installation steps in the official web sites.
 
 #### VirtualBox
 
@@ -22,11 +22,11 @@ https://docs.ansible.com/
 
 ## And now? How does it work
 
-1) First you need to clone this repository
+1) First you need to clone this git repository
 
-2) Next cd into the cloned git directory and be sure to see the <strong>Vagrantfile</strong> and the <strong>master_playbook</strong> files. The first one is used by Vagrant to setup the VM's, the second, instead, is used by Ansible to run commands and install software on the previously mentioned VM's.
+2) Next cd into the cloned git directory and check if you can see the <strong>Vagrantfile</strong> and the <strong>master_playbook.yaml</strong> files. The first one is used by Vagrant to setup the VM's. The second, instead, is used by Ansible to run commands and install software on the previously mentioned VM's. Be sure to execute the following commands from inside this folder otherwise they won't work.
 
-3) Finally you need to know a few Vagrant commands to operate with the cluster using the terminal. The most important ones are:
+3) Finally you need to know a few Vagrant commands to operate with the cluster using the terminal. The most importants are:
 
 - <strong> vagrant up --provision</strong> => spin up the cluster (--provision is used to run Ansible scripts on the VM's). In alternative you can run the <strong>start.sh</strong> in the script folder.
 
