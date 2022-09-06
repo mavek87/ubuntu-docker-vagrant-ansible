@@ -1,15 +1,12 @@
 #  Ubuntu Docker Vagrant Ansible
+
 ## Ubuntu Virtual Machines cluster with Docker
 
 Customizable cluster of Ubuntu virtual machines setup with docker installed. It's very easy to increase or reduce the number of VM's simply adding or removing them from the Vagrantifile.
 
-<br />
-
 ## Prerequisite steps
 
 VirtualBox, Vagrant and Ansible need to be installed as prerequisites. You can find the installation steps provided in their respective official web sites.
-
-<br/>
 
 #### VirtualBox
 
@@ -24,7 +21,6 @@ https://www.vagrantup.com/
 
 https://docs.ansible.com/
 
-<br/>
 
 ## And now? How does it work
 
