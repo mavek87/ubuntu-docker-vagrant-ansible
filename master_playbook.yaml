@@ -1,0 +1,41 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    
+    - name: Install docker prerequisites packages
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+        # - gnupg-agent
+    
+    - name: Add apt-key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+    
+    - name: Add docker repo
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+      
+    - name: Update apt packages
+      apt:
+        update_cache: yes
+
+    - name: Install docker
+      apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+        # - containerd.io
+        update_cache: yes
+
+    - name: Create docker group
+      group:
+        name: docker
+        state: present
+
+    - name: Add user permissions
+      shell: "usermod -aG docker vagrant" 
