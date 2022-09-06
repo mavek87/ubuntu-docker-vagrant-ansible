@@ -31,16 +31,15 @@ https://docs.ansible.com/
 
 3) Finally you need to know a few Vagrant commands to operate with the cluster using the terminal. The most important ones are:
 
-- <strong> vagrant up --provision</strong> 
-spin up the cluster (--provision is used to run Ansible scripts on the VM's). In alternative you can run the <strong>start.sh</strong> in the script folder.
+- <strong> vagrant up --provision</strong> => spin up the cluster (--provision is used to run Ansible scripts on the VM's). In alternative you can run the <strong>start.sh</strong> in the script folder.
 
-- <strong> vagrant status </strong> ===> check the status of the virtual machines. In alternative you can run the <strong>status.sh</strong> in the script folder.
+- <strong> vagrant status </strong> => check the status of the virtual machines. In alternative you can run the <strong>status.sh</strong> in the script folder.
 
-- <strong> vagrant halt -f </strong> ===> stop all the VM's. In alternative you can run the <strong>stop.sh</strong> in the script folder.
+- <strong> vagrant halt -f </strong> => stop all the VM's. In alternative you can run the <strong>stop.sh</strong> in the script folder.
 
-- <strong> vagrant destroy -f </strong> ===> stop and destroy all the VM's. In alternative you can run the <strong>destroy.sh</strong> in the script folder.
+- <strong> vagrant destroy -f </strong> => stop and destroy all the VM's. In alternative you can run the <strong>destroy.sh</strong> in the script folder.
 
-- <strong> vagrant ssh \<vm-name\> </strong> ===> ssh into a VM by using its name
+- <strong> vagrant ssh \<vm-name\> </strong> => ssh into a VM by using its name
 
-- <strong> vagrant --help </strong> ===> Vagrant help
+- <strong> vagrant --help </strong> => Vagrant help
 
